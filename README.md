@@ -40,7 +40,7 @@ Example-4/
 ## Usage
 1. Navigate to the specific example folder:
    ```sh
-   cd practice/example-1
+   cd Example-1
    ```
 2. Initialize Terraform:
    ```sh
