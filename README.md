@@ -1,11 +1,10 @@
-# Practice Folder - Terraform Learn
+# Practice Examples - Terraform Learn
 
 This folder contains various Terraform practice exercises to help understand and implement Terraform concepts.
 
 ## Folder Structure
 
 ```
-practice/
 │── Example-1/
 │   ├── main.tf
 │   ├── variables.tf
