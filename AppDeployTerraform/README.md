@@ -1,9 +1,9 @@
 ---
-```markdown
+
 # 🚀 Terraform Flask App Deployment on AWS EC2
 
 This project demonstrates how to deploy a simple **Python Flask application** on an **AWS EC2 Ubuntu instance** using **Terraform**. It uses `file` and `remote-exec` provisioners to automatically upload the app and start it.
-```
+
 ---
 
 ## 📸 Live Preview
