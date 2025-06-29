@@ -136,9 +136,7 @@ If you found this useful or want to collaborate, feel free to reach out!
 
 `#Terraform` `#AWS` `#EC2` `#Flask` `#Python` `#IaC` `#DevOps` `#CloudDeployment`
 
-```
 
----
 
 
 
