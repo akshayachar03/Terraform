@@ -5,7 +5,7 @@ This example demonstrates how to use Terraform workspaces to manage multiple env
 ## Folder Structure
 
 ```
-Terraform_Workspaces/
+Example-3/
 ├── main.tf
 ├── terraform.tfvars
 ├── variables.tf
