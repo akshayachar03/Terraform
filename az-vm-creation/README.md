@@ -46,7 +46,7 @@ az storage container create --name $CONTAINER_NAME --account-name $STORAGE_ACCOU
 
 ### 2. Update `backend.tf`
 
-```hcl
+
 terraform {
   backend "azurerm" {
     resource_group_name  = "tfstate-rg"
