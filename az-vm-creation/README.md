@@ -34,7 +34,7 @@ az-vm-creation/
 This project uses **Azure Storage Account** for storing Terraform state remotely.
 
 ### 1. Create a Storage Account and Container
-```hcl
+
 RESOURCE_GROUP="tfstate-rg"
 STORAGE_ACCOUNT="tfstateaksdemo$RANDOM"
 CONTAINER_NAME="tfstate"
@@ -42,7 +42,7 @@ CONTAINER_NAME="tfstate"
 az group create --name $RESOURCE_GROUP --location eastus
 az storage account create --name $STORAGE_ACCOUNT --resource-group $RESOURCE_GROUP --location eastus --sku Standard_LRS
 az storage container create --name $CONTAINER_NAME --account-name $STORAGE_ACCOUNT
-```
+
 ````
 
 ### 2. Update `backend.tf`
