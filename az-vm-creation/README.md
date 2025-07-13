@@ -1,21 +1,25 @@
 
+---
+
 ```md
 # 🚀 Azure Virtual Machine Creation using Terraform
 
 This project demonstrates how to provision a **Linux Virtual Machine** on Microsoft Azure using **Terraform**.  
 It includes a virtual network, subnet, NIC, public IP, and the VM itself. It also uses **Azure Storage Account** as a remote backend to store the Terraform state.
 
-
+---
 
 ## 📁 Directory Structure
----
+
 ```
+
 az-vm-creation/
 ├── main.tf             # Terraform resources to create VM and networking
 ├── backend.tf          # Remote backend configuration
 └── README.md           # This file
+
 ````
----
+
 ---
 
 ## ✅ Prerequisites
@@ -34,7 +38,7 @@ This project uses **Azure Storage Account** for storing Terraform state remotely
 
 ### 1. Create a Storage Account and Container
 ```bash
-RESOURCE_GROUP="your-rg"
+RESOURCE_GROUP="tfstate-rg"
 STORAGE_ACCOUNT="tfstateaksdemo$RANDOM"
 CONTAINER_NAME="tfstate"
 
@@ -48,10 +52,10 @@ az storage container create --name $CONTAINER_NAME --account-name $STORAGE_ACCOU
 ```hcl
 terraform {
   backend "azurerm" {
-    resource_group_name  = "your-rg"
+    resource_group_name  = "tfstate-rg"
     storage_account_name = "<your_storage_account>"
-    container_name       = "backend"
-    key                  = "terraform.tfstate"
+    container_name       = "tfstate"
+    key                  = "az-vm-terraform.tfstate"
   }
 }
 ```
@@ -130,3 +134,8 @@ terraform destroy
 * Linux Virtual Machine (Ubuntu 22.04 LTS)
 
 ---
+
+
+---
+
+
