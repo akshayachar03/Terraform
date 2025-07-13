@@ -1,3 +1,4 @@
+---
 ### 📄 `README.md`
 
 ```md
@@ -11,12 +12,10 @@ It includes a virtual network, subnet, NIC, public IP, and the VM itself. It als
 ## 📁 Directory Structure
 
 ```
-
 az-vm-creation/
 ├── main.tf             # Terraform resources to create VM and networking
 ├── backend.tf          # Remote backend configuration
 └── README.md           # This file
-
 ````
 
 ---
