@@ -43,7 +43,6 @@ az group create --name $RESOURCE_GROUP --location eastus
 az storage account create --name $STORAGE_ACCOUNT --resource-group $RESOURCE_GROUP --location eastus --sku Standard_LRS
 az storage container create --name $CONTAINER_NAME --account-name $STORAGE_ACCOUNT
 
-````
 
 ### 2. Update `backend.tf`
 
