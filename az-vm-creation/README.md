@@ -1,12 +1,12 @@
 
-
+---
 ```md
 # 🚀 Azure Virtual Machine Creation using Terraform
 
 This project demonstrates how to provision a **Linux Virtual Machine** on Microsoft Azure using **Terraform**.  
 It includes a virtual network, subnet, NIC, public IP, and the VM itself. It also uses **Azure Storage Account** as a remote backend to store the Terraform state.
 
----
+
 
 ## 📁 Directory Structure
 
